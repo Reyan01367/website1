@@ -1,4 +1,4 @@
-# Color Harmony - Color Analysis Guide Website
+# Color Compass - Color Analysis Guide Website
 
 A beautiful, interactive website that helps people discover their most flattering color palettes and metals based on their natural features (skin, eye, and hair color).
 
@@ -35,7 +35,7 @@ website/
 cd /Users/rahulkumargupta/Desktop/website
 git init
 git add .
-git commit -m "Initial commit: Color Harmony website"
+git commit -m "Initial commit: Color Compass website"
 ```
 
 ### Step 2: Create GitHub Repository
