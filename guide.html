@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Palette - Color Harmony</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🎨</span>
+                <span class="logo-text">Color Harmony</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guide.html" class="active">Find Your Palette</a></li>
+                <li><a href="palettes.html">Palettes</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="guide-container">
+        <div class="guide-header">
+            <h1>Discover Your Color Palette</h1>
+            <p>Answer a few simple questions about your natural features to find your perfect seasonal palette</p>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+            <div class="question" id="question1">
+                <h3>Question 1: What is your natural skin undertone?</h3>
+                <div class="options-grid">
+                    <button class="option-btn" data-value="spring">Warm with golden or peachy tones</button>
+                    <button class="option-btn" data-value="summer">Cool with pink or rosy tones</button>
+                    <button class="option-btn" data-value="autumn">Warm with golden or bronze tones</button>
+                    <button class="option-btn" data-value="winter">Cool with pink, blue, or olive tones</button>
+                </div>
+            </div>
+
+            <div class="question" id="question2" style="display: none;">
+                <h3>Question 2: What color are your eyes?</h3>
+                <div class="options-grid">
+                    <button class="option-btn" data-value="spring">Light blue, green, or light hazel</button>
+                    <button class="option-btn" data-value="summer">Blue, gray-blue, or soft brown</button>
+                    <button class="option-btn" data-value="autumn">Brown, hazel, or green with golden flecks</button>
+                    <button class="option-btn" data-value="winter">Dark brown, black, or bright blue</button>
+                </div>
+            </div>
+
+            <div class="question" id="question3" style="display: none;">
+                <h3>Question 3: What is your natural hair color?</h3>
+                <div class="options-grid">
+                    <button class="option-btn" data-value="spring">Strawberry blonde, golden blonde, or light brown with golden highlights</button>
+                    <button class="option-btn" data-value="summer">Ash blonde, light brown, or gray</button>
+                    <button class="option-btn" data-value="autumn">Auburn, red, dark brown with red highlights, or black-brown</button>
+                    <button class="option-btn" data-value="winter">Dark brown, black, or salt-and-pepper</button>
+                </div>
+            </div>
+
+            <div class="question" id="question4" style="display: none;">
+                <h3>Question 4: How does your skin react to the sun?</h3>
+                <div class="options-grid">
+                    <button class="option-btn" data-value="spring">Burns easily, then tans to golden</button>
+                    <button class="option-btn" data-value="summer">Burns easily, rarely tans</button>
+                    <button class="option-btn" data-value="autumn">Burns initially, then tans well</button>
+                    <button class="option-btn" data-value="winter">Burns easily, tans minimally or not at all</button>
+                </div>
+            </div>
+
+            <div class="question" id="question5" style="display: none;">
+                <h3>Question 5: Which metal looks best on you?</h3>
+                <div class="options-grid">
+                    <button class="option-btn" data-value="spring">Gold</button>
+                    <button class="option-btn" data-value="summer">Silver or platinum</button>
+                    <button class="option-btn" data-value="autumn">Gold or rose gold</button>
+                    <button class="option-btn" data-value="winter">Silver or platinum</button>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-primary" id="nextBtn" style="display: none;">Next Question</button>
+                <button class="btn btn-primary" id="submitBtn" style="display: none;">Get My Results</button>
+            </div>
+        </div>
+
+        <div class="result-section" id="resultSection">
+            <h2 id="resultTitle"></h2>
+            <p id="resultDescription"></p>
+            <div style="margin-top: 2rem;">
+                <a href="palettes.html" class="btn btn-secondary" style="background: white; color: var(--primary-color);">Explore Your Palette</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Color Harmony</h3>
+                    <p>Discover your perfect color palette and express your unique style with confidence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="guide.html">Find Your Palette</a></li>
+                        <li><a href="palettes.html">All Palettes</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Color Harmony. Created with ❤️ to help you express your true colors.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
