@@ -856,4 +856,191 @@ body {
     }
 }
 
+/* Booking Page Styles */
+.booking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 20px;
+}
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.booking-header h1 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.booking-header p {
+    font-size: 1.25rem;
+    color: var(--text-light);
+}
+
+.booking-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.booking-info h2,
+.booking-info h3 {
+    font-family: var(--font-display);
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.booking-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.booking-features li {
+    padding: 0.75rem 0;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.pricing-list {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.service-name {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.service-price {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.booking-form-wrapper {
+    background: var(--bg-white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Success Page Styles */
+.success-container {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 20px;
+}
+
+.success-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 0 auto 2rem;
+}
+
+.success-content h1 {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.success-message {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles for Booking */
+@media (max-width: 768px) {
+    .booking-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .booking-header h1 {
+        font-size: 2rem;
+    }
+
+    .booking-form-wrapper {
+        padding: 2rem 1.5rem;
+    }
+
+    .success-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .success-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 3rem;
+    }
+}
+
 

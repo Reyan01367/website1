@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session - Color Compass</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🎨</span>
+                <span class="logo-text">Color Compass</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guide.html">Find Your Palette</a></li>
+                <li><a href="palettes.html">Palettes</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="booking.html" class="active">Book a Session</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="booking-container">
+        <div class="booking-header">
+            <h1>Book Your Personal Color Analysis</h1>
+            <p>Get a personalized color consultation tailored to your unique features</p>
+        </div>
+
+        <div class="booking-content">
+            <div class="booking-info">
+                <h2>What to Expect</h2>
+                <ul class="booking-features">
+                    <li>✨ One-on-one personalized consultation</li>
+                    <li>🎨 Detailed color palette analysis</li>
+                    <li>💎 Metal and jewelry recommendations</li>
+                    <li>👗 Wardrobe and styling guidance</li>
+                    <li>📋 Take-home color guide</li>
+                </ul>
+
+                <h3 style="margin-top: 2rem;">Service Pricing</h3>
+                <div class="pricing-list">
+                    <div class="price-item">
+                        <span class="service-name">Basic Color Analysis</span>
+                        <span class="service-price">Coming Soon</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="service-name">Complete Color Package</span>
+                        <span class="service-price">Coming Soon</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="service-name">Personal Shopping Session</span>
+                        <span class="service-price">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-form-wrapper">
+                <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/booking-success.html">
+                    <input type="hidden" name="form-name" value="booking" />
+                    <p style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Type *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service...</option>
+                            <option value="basic">Basic Color Analysis</option>
+                            <option value="complete">Complete Color Package</option>
+                            <option value="shopping">Personal Shopping Session</option>
+                            <option value="other">Other / Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="preferred-date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals, any questions, or special requests..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Color Compass</h3>
+                    <p>Discover your perfect color palette and express your unique style with confidence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="guide.html">Find Your Palette</a></li>
+                        <li><a href="palettes.html">All Palettes</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="booking.html">Book a Session</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Color Compass. Created with ❤️ to help you express your true colors.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
