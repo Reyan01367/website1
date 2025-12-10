@@ -2,14 +2,6 @@
   # No build command needed for static site
   publish = "."
 
-# Form notifications
-[[plugins]]
-  package = "@netlify/plugin-emails"
-
-[plugins.inputs]
-  # Send form submissions to this email
-  to = "ryqbyreham@gmail.com"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
