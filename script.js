@@ -56,7 +56,7 @@ if (document.getElementById('quizContainer')) {
     const resultDescription = document.getElementById('resultDescription');
 
     let currentQuestionNum = 1;
-    const totalQuestions = 5;
+    const totalQuestions = 4;
 
     // Add click handlers to option buttons
     optionButtons.forEach(button => {
